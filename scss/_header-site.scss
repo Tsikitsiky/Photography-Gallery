@@ -1,0 +1,37 @@
+.header-site {
+  background-color: $colour-blue;
+  color: $colour-white;
+}
+
+.header-site__container {
+ position: relative;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ padding-block: 16px;
+}
+
+.header-site__heading {
+  font-family: $font-header, $font-header-fallbacks;
+  font-weight: $font-weight-bold;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+
+  a {
+    text-transform: uppercase;
+    color: $colour-white;
+  }
+}
+
+.icon_menu {
+  background-image: image('icon_menu.svg');
+  background-size: 20px 14px;
+  @include bg;
+}
+
+.header-site__menu--checkbox > label {
+  width: 1rem;
+  height: 27px;
+  display: block;
+}

@@ -1,0 +1,41 @@
+.header-site__menu {
+    padding: 1rem;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+
+    ul {
+      background-color: rgba($color: #000, $alpha: 0.9);
+      height: 100vh;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      border-radius: 5px;
+      @include reset-list;
+    }
+
+    a {
+      font-weight: $font-weight-bold;
+      color: $colour-white;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: right;
+    }
+  }
+
+  [type="checkbox"]:checked ~ nav {
+    transform: translateX(0%);
+  }
+
+  #menu_checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+ }
+ 
