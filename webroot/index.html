@@ -3,10 +3,202 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Photograph-site</title>
   <link rel="stylesheet" href="webroot/css/index.css">
 </head>
 <body>
-  
+    <header class="header-site">
+      <div class="header-site__container container">
+        <h1 class="header-site__heading logo"><a href="/">photograf</a></h1>
+        <nav class="header-site__menu">
+          <ul>
+            <li><a href="/about"></a>About</li>
+            <li><a href="/portfolio"></a>Portfolio</li>
+            <li><a href="/blog"></a>Blog</li>
+            <li><a href="/contact"></a>Contact</li>
+          </ul>
+        </nav>
+        <div class="header-site__menu--checkbox">
+          <label for="menu_checkbox" class="icon icon_menu">
+            <span class="a11y">Open the menu</span>
+          </label>
+          <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
+        </div>
+      </div>
+    </header>
+    <main>
+      <header class="main-header">
+        <div class="main-header__container container">
+          <h2 class="main-header__heading">Beauty is seen through a lens</h2>
+          <p class="introduction">Perspective matters. All my photographs try to capture that perspective, however subtle.</p>
+          <nav class="breadcrumb-link"><a href="/">Back to portfolio</a></nav>
+        </div>
+      </header>
+      <section class="image-slider">
+        <div class="image-slide__container container">
+          <header class="a11y">
+            <h3>image slider</h3>
+          </header>
+          <picture class="main_image">
+            <source media="(min-width: 1400px)" srcset="images/rock_carvings_lg.jpeg">
+            <source media="(min-width: 768px)" srcset="images/rock_carvings_md.jpeg">
+            <img src="images/rock_carvings_sm.jpg" alt="rock carvings">
+          </picture>
+          <ul class="image-slider__list">
+            <li><img src="./images/rock_carvings_sm.jpg" alt="rock carvings"></li>
+            <li><img src="./images/stairs_sm.jpg" alt="stairs"></li>
+            <li><img src="./images/ripples_sm.jpg" alt="ripples"></li>
+            <li><img src="./images/dunes_sm.jpg" alt="dunes"></li>
+            <li><img src="./images/passage_sm.jpg" alt="passage"></li>
+            <li><img src="./images/car_sm.jpg" alt="car"></li>
+            <li><img src="./images/sunset_sm.jpg" alt="sunset"></li>
+            <li><img src="./images/canyon_sm.jpg" alt="canyon"></li>
+          </ul>
+
+          <div class="image-slide__about-the-main-image">
+            <ul class="main-image-details">
+              <li>
+                <p class="head">Date</p>
+                <p class="detail">
+                  <span class="a11y">The picture was taken in</span>
+                  <time datetime="2019-07-03T16:29:15Z">
+                    July 2019
+                  </time>
+                </p>
+              </li>
+              <li>
+                <p class="head">Location</p>
+                <p class="detail">
+                  <span class="a11y">It is a picture of a</span>
+                  Morrocan Highlands
+                </p>
+              </li>
+              <li>
+                <p class="head">Camera</p>
+                <p class="detail">
+                  <span class="a11y">The photo was taken with a</span>
+                  Canon EOS 1D Mark IV
+                </p>
+              </li>
+              <li>
+                <p class="head">Lens</p>
+                <p class="detail">
+                  <span class="a11y">The lens of the camera is</span>
+                  70mm 12.B @ 1/16"
+                </p>
+              </li>
+            </ul>
+            <article class="main-image__article">
+              <header>
+                <h3 class="main-image__article--title">Mineral carvings</h3>
+              </header>
+              <p class="main-image__article--summary">
+                Deep in the deserts of Morroco, lies a dried-up valley, featuring some of the most exquisite rock formations, carved millions of years ago.
+              </p>
+              <p class="main-image__article--description">
+                To truly experience these beautiful formations, one has to visit them in person. I hope my photos have managed to capture the sheer size – gravitas even – and spellbinding nature of these eroded walls.
+              </p>
+              <footer>
+                <p class="a11y">Find us on the web</p>
+                <ul class="sharing-links">
+                  <li>
+                    <a href="/facebook" class="icon icon-facebook">
+                      <span class="a11y">facebook</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/twitter" class="icon icon-twitter">
+                      <span class="a11y">twitter</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/instagram" class="icon icon-instagram">
+                      <span class="a11y">instagram</span>
+                    </a>
+                  </li>
+                </ul>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="suscribe">
+        <div class="suscribe__container container">
+          <header class="suscribe__heading">
+            <h3>Stay up-to-date with my updates</h3>
+          </header>
+          <p class="hint">
+            <span class="a11y">Hint</span>
+            Latest
+          </p>
+          <form class="form_subscribe" action="/subscribe" mehtod="POST">
+            <fieldset>
+              <label for="email">your email adress</label>
+              <input type="email" name="email" id="imail" placeholder="e.g.jesse@gmail.com">
+            </fieldset>
+            <button type="submit" aria-label="suscribe button">Suscribe</button>
+          </form>
+        </div>
+      </section>
+      <footer class="main-footer">
+        <div class="main-footer__container">
+          <div class="about-the-website-owner">
+            <p class="logo">photograf</p>
+            <p class="description">
+              The personal website of Jesse McJessesen, professional photographer.
+            </p>
+            <p class="a11y">
+              See Jesse McJessesen on the web
+            </p>
+            <ul>
+              <li><a class="icon icon-facebook" href="/facebook">Facebook</a></li>
+              <li><a class="icon icon-twitter" href="/twitter">Twitter</a></li>
+              <li><a class="icon icon-instagram" href="/instagram">Instagram</a></li>
+            </ul>
+          </div>
+          <nav class="main-footer__navigation">
+            <p class="a11y">Sitemap</p>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/">About</a></li>
+              <li><a href="/">Portfolio</a></li>
+              <li><a href="/">Blog</a></li>
+              <li><a href="/">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="blog-list">
+            <ul>
+              <li>
+                <img src="./images/woman_sm.jpg" alt="woman">
+                <p>
+                  <a href=".">Rust, pumpkin, tans, and spices.</a>
+                  <br>
+                  <span class="a11y">Posted on: </span>
+                  <time datetime="2019-07-03T16:29:15Z">
+                    July 15 2019
+                  </time>
+                </p>
+              </li>
+              <li>
+                <img src="./images/passage_sm.jpg" alt="passage">
+                <p>
+                  <a href=".">Experiencing Japan</a>
+                  <br>
+                  <span class="a11y">Posted on: </span>
+                  <time datetime="2019-07-03T16:29:15Z">
+                    July 10 2019
+                  </time>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="author">
+            <p>Created by Laaqiq, modified by Onja</p>
+            <p>© PHOTOGRAF, 2020. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
 </body>
 </html>
