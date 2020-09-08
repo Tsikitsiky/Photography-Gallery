@@ -28,6 +28,11 @@ a {
 .container {
   padding-inline: 14px; }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: auto; } }
+
 .header-site {
   background-color: #434CCC;
   color: #FFFFFF; }
@@ -59,6 +64,10 @@ a {
   width: 1rem;
   height: 27px;
   display: block; }
+
+@media (min-width: 1200px) {
+  .header-site__menu--checkbox {
+    display: none; } }
 
 .header-site__menu {
   padding: 1rem;
@@ -96,6 +105,22 @@ a {
   top: 0;
   left: 0;
   z-index: -1; }
+
+@media (min-width: 1200px) {
+  .header-site__menu {
+    position: relative;
+    bottom: auto;
+    width: auto;
+    transform: none;
+    transition: none;
+    margin: 0;
+    padding: 0; }
+    .header-site__menu ul {
+      display: flex;
+      flex-direction: row;
+      column-gap: 1rem;
+      padding: 0;
+      height: auto; } }
 
 .a11y {
   display: none;
