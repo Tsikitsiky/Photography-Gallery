@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("DM Sans Regular"), local("DMSans-Regular"), url("../fonts/dm_sans_400.woff2") format("woff2"), url("../fonts/dm_sans_400.woff") format("woff"); }
+
+@font-face {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("DM Sans Bold"), local("DMSans-Bold"), url("../fonts/dm_sans_700.woff2") format("woff2"), url("../fonts/dm_sans_700.woff") format("woff"); }
+
+@font-face {
+  font-family: "DM Serif Display";
+  font-weight: 700;
+  font-style: normal;
+  src: local("DM Serif Display"), local("DM-Serif-Display"), url("../fonts/dm_serif_display_400.woff2") format("woff2"), url("../fonts/dm_serif_display_400.woff") format("woff"); }
+
+html {
+  --paragraph-font-size: $base-font-size; }
+
+body {
+  font-family: "DM Sans", Arial, Helvetica, sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  padding-inline: 14px; }
+
+.header-site {
+  background-color: #434CCC;
+  color: #FFFFFF; }
+
+.header-site__container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-block: 16px; }
+
+.header-site__heading {
+  font-family: "DM Serif Display", "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0; }
+  .header-site__heading a {
+    text-transform: uppercase;
+    color: #FFFFFF; }
+
+.icon_menu {
+  background-image: url("../images/icon_menu.svg");
+  background-size: 20px 14px;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.header-site__menu--checkbox > label {
+  width: 1rem;
+  height: 27px;
+  display: block; }
+
+.header-site__menu {
+  padding: 1rem;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s; }
+  .header-site__menu ul {
+    background-color: #434ccc;
+    height: 100vh;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    border-radius: 5px;
+    list-style: none;
+    margin: 0; }
+  .header-site__menu a {
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right; }
+
+[type="checkbox"]:checked ~ nav {
+  transform: translateX(0%);
+  top: 70%;
+  left: -5%; }
+
+#menu_checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+.a11y {
+  display: none;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; }
