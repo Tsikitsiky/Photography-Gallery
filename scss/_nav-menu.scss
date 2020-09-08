@@ -9,9 +9,9 @@
     transition: transform 0.3s;
 
     ul {
-      background-color: rgba($color: #000, $alpha: 0.9);
+      background-color: rgba($color: $colour-blue, $alpha: 1);
       height: 100vh;
-      padding: 3rem;
+      padding: 5rem;
       display: flex;
       flex-direction: column;
       row-gap: 2rem;
@@ -30,6 +30,8 @@
 
   [type="checkbox"]:checked ~ nav {
     transform: translateX(0%);
+    top: 70%;
+    left: -5%;
   }
 
   #menu_checkbox {
