@@ -125,17 +125,17 @@
 
       <section class="suscribe">
         <div class="suscribe__container container">
-          <header class="suscribe__heading">
-            <h3>Stay up-to-date with my updates</h3>
+          <header>
+            <h3 class="suscribe__heading">Stay up-to-date with my updates</h3>
+            <p class="hint">
+              <span class="a11y">Hint</span>
+              Latest
+            </p>
           </header>
-          <p class="hint">
-            <span class="a11y">Hint</span>
-            Latest
-          </p>
-          <form class="form_subscribe" action="/subscribe" mehtod="POST">
+          <form class="form_subscribe" action="/subscribe">
             <fieldset>
               <label for="email">your email adress</label>
-              <input type="email" name="email" id="imail" placeholder="e.g.jesse@gmail.com">
+              <input type="email" name="email" id="email" placeholder="e.g.jesse@gmail.com">
             </fieldset>
             <button type="submit" aria-label="suscribe button">Suscribe</button>
           </form>

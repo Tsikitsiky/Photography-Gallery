@@ -282,7 +282,70 @@ h4 {
 @media (min-width: 1170px) {
   .image-slider__list {
     column-gap: 10.5px; }
+  .active-image__article--title {
+    font-size: 52px;
+    line-height: 64px; }
   .image-slider__about-the-main-image {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between; } }
+
+.suscribe {
+  background-color: #FFDD78;
+  padding-top: 63px;
+  padding-bottom: 53px; }
+
+.suscribe__container header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 19px;
+  padding-bottom: 60px; }
+
+.suscribe__heading {
+  font-size: 40px;
+  line-height: 48px;
+  order: 2; }
+
+.hint {
+  order: 1;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  color: #000000; }
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-between;
+  row-gap: 9px; }
+  fieldset label {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 9px; }
+  fieldset input {
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid  #DADADA;
+    width: 326px; }
+  fieldset input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    line-height: 24px; }
+
+.suscribe__container button {
+  background-color: #434CCC;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px; }
