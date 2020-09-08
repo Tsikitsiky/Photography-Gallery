@@ -50,7 +50,8 @@ h4 {
 @media (min-width: 1170px) {
   .container {
     max-width: 1170px;
-    margin: auto; } }
+    margin: auto;
+    padding-inline: 0; } }
 
 .header-site {
   background-color: #434CCC;
@@ -341,6 +342,7 @@ fieldset {
     line-height: 24px; }
 
 .suscribe__container button {
+  height: 48px;
   background-color: #434CCC;
   padding: 12px 32px;
   border: none;
@@ -349,3 +351,22 @@ fieldset {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px; }
+
+@media (min-width: 1170px) {
+  .suscribe__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between; }
+  .suscribe__container form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 54px; }
+  .suscribe__container header {
+    max-width: 382px; }
+    .suscribe__container header .suscribe__heading {
+      font-size: 52px;
+      line-height: 64px; }
+  .suscribe__container button {
+    box-sizing: border-box;
+    margin-top: calc(9px + 16px); } }
