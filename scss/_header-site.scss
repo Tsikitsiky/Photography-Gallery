@@ -35,3 +35,9 @@
   height: 27px;
   display: block;
 }
+
+@media (min-width: $breakpoint) {
+  .header-site__menu--checkbox {
+    display: none;
+  }
+}

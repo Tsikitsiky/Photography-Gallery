@@ -41,3 +41,22 @@
     z-index: -1;
  }
  
+ @media (min-width: $breakpoint) {
+  .header-site__menu {
+    position: relative;
+    bottom: auto;
+    width: auto;
+    transform: none;
+    transition: none;
+    margin: 0;
+    padding: 0;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      column-gap: 1rem;
+      padding: 0;
+      height: auto;
+    }
+  }
+ }

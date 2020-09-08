@@ -13,3 +13,10 @@ a {
 .container {
   padding-inline: 14px;
 }
+
+@media (min-width: $breakpoint) {
+  .container {
+    max-width: $breakpoint;
+    margin: auto;
+  }
+}

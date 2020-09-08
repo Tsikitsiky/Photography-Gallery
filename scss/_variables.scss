@@ -11,6 +11,8 @@ $colou-text-black: #000000;
 $base-font-size: 16px;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
+$container-max-width: 1200px;
+$breakpoint: $container-max-width;
 
 //for the background image
 @function image($filename) {
