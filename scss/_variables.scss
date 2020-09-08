@@ -1,0 +1,30 @@
+$font-base: 'DM Sans';
+$font-header: 'DM Serif Display';
+$font-base-fallbacks: Arial, Helvetica, sans-serif;
+$font-header-fallbacks: 'Times New Roman', Times, serif;
+$colour-blue: #434CCC;
+$colour-white: #FFFFFF;
+$colour-yellow: #FFDD78;
+$colour-slightly-white: rgba(67, 76, 204, 0.05);
+$colour-text-grey: rgba(0, 0, 0, 0.5);
+$colou-text-black: #000000;
+$base-font-size: 16px;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+//for the background image
+@function image($filename) {
+  @return url('../images/#{$filename}');
+}
+
+//reset the list item
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+}
+
+//set up the background
+@mixin bg {
+  background-repeat: no-repeat;
+  background-position: center;
+}

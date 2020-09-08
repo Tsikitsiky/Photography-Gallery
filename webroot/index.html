@@ -4,25 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Photograph-site</title>
-  <link rel="stylesheet" href="webroot/css/index.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <header class="header-site">
       <div class="header-site__container container">
         <h1 class="header-site__heading logo"><a href="/">photograf</a></h1>
+        <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
         <nav class="header-site__menu">
           <ul>
-            <li><a href="/about"></a>About</li>
-            <li><a href="/portfolio"></a>Portfolio</li>
-            <li><a href="/blog"></a>Blog</li>
-            <li><a href="/contact"></a>Contact</li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header-site__menu--checkbox">
           <label for="menu_checkbox" class="icon icon_menu">
             <span class="a11y">Open the menu</span>
           </label>
-          <input type="checkbox" name="menu_checkbox" id="menu_checkbox">
         </div>
       </div>
     </header>
@@ -40,8 +40,8 @@
             <h3>image slider</h3>
           </header>
           <picture class="main_image">
-            <source media="(min-width: 1400px)" srcset="images/rock_carvings_lg.jpeg">
-            <source media="(min-width: 768px)" srcset="images/rock_carvings_md.jpeg">
+            <source media="(min-width: 1200px)" srcset="images/rock_carvings_lg.jpg">
+            <source media="(min-width: 768px)" srcset="images/rock_carvings_md.jpg">
             <img src="images/rock_carvings_sm.jpg" alt="rock carvings">
           </picture>
           <ul class="image-slider__list">

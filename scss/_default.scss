@@ -1,0 +1,15 @@
+html {
+  --paragraph-font-size: $base-font-size;
+}
+
+body {
+  font-family: $font-base, $font-base-fallbacks;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-inline: 14px;
+}
