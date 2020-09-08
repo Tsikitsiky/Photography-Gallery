@@ -58,6 +58,7 @@ fieldset {
 }
 
 .suscribe__container button {
+  height: 48px;
   background-color: $colour-blue;
   padding: 12px 32px;
   border: none;
@@ -66,4 +67,34 @@ fieldset {
   font-weight: $font-weight-bold;
   font-size: $base-font-size;
   line-height: 24px;
+}
+
+@media (min-width:$breakpoint) {
+  .suscribe__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+
+  .suscribe__container form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 54px;
+    
+  }
+
+  .suscribe__container header {
+    max-width: 382px;
+
+    .suscribe__heading {
+      font-size: 52px;
+      line-height: 64px;
+    }
+  }
+
+  .suscribe__container button {
+    box-sizing: border-box;
+    margin-top: calc(9px + 16px);
+  }
 }

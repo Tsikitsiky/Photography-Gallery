@@ -41,5 +41,6 @@ h4 {
   .container {
     max-width: $breakpoint;
     margin: auto;
+    padding-inline: 0;
   }
 }
