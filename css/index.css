@@ -20,13 +20,19 @@ html {
   --paragraph-font-size: $base-font-size; }
 
 body {
-  font-family: "DM Sans", Arial, Helvetica, sans-serif; }
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  margin: 0; }
 
 a {
   text-decoration: none; }
 
 ul {
-  margin: 0; }
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+img {
+  border-radius: 5px; }
 
 .container {
   padding-inline: 14px; }
@@ -38,9 +44,9 @@ h4 {
   font-family: "DM Serif Display", "Times New Roman", Times, serif;
   margin: 0; }
 
-@media (min-width: 1040px) {
+@media (min-width: 1240px) {
   .container {
-    max-width: 1040px;
+    max-width: 1240px;
     margin: auto; } }
 
 .header-site {
@@ -74,7 +80,7 @@ h4 {
   height: 27px;
   display: block; }
 
-@media (min-width: 1040px) {
+@media (min-width: 1240px) {
   .header-site__menu--checkbox {
     display: none; } }
 
@@ -115,7 +121,7 @@ h4 {
   left: 0;
   z-index: -1; }
 
-@media (min-width: 1040px) {
+@media (min-width: 1240px) {
   .header-site__menu {
     position: relative;
     bottom: auto;
@@ -127,7 +133,7 @@ h4 {
     .header-site__menu ul {
       display: flex;
       flex-direction: row;
-      column-gap: 1rem;
+      column-gap: 2rem;
       padding: 0;
       height: auto; } }
 
@@ -174,14 +180,32 @@ h4 {
   line-height: 32px;
   color: #000000; }
 
-@media (min-width: 1040px) {
-  .main-header__container {
-    max-width: 585px;
-    text-align: left;
-    margin: 0; }
+@media (min-width: 1240px) {
   .main-header__heading {
     font-size: 72px;
-    line-height: 80px; } }
+    line-height: 80px; }
+  .breadcrumb-link,
+  .main-header__heading,
+  .introduction {
+    max-width: 585px;
+    text-align: left; } }
 
 .image-slider {
   background-color: rgba(67, 76, 204, 0.05); }
+
+.image-slider__list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 9px;
+  overflow: hidden;
+  flex-basis: fill;
+  padding-top: 8px; }
+  .image-slider__list img {
+    width: 137px;
+    height: 85px; }
+  .image-slider__list img:not(.active-image) {
+    opacity: 0.5; }
+
+@media (min-width: 1240px) {
+  .image-slider__list {
+    column-gap: 10.5px; } }
