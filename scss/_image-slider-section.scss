@@ -1,0 +1,27 @@
+.image-slider {
+  background-color: $colour-slightly-white;
+}
+
+.image-slider__list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 9px;
+  overflow: hidden;
+  flex-basis: fill;
+  padding-top: 8px;
+
+    img {
+      width: 137px;
+      height: 85px;
+    }
+
+    img:not(.active-image) {
+      opacity: 0.5;
+    }
+}
+
+@media (min-width: $breakpoint) {
+  .image-slider__list {
+    column-gap: 10.5px;
+  }
+}

@@ -40,14 +40,15 @@
 }
 
 @media (min-width: $breakpoint) {
-  .main-header__container {
-    max-width: 585px;
-    text-align: left;
-    margin: 0;
-  }
-
   .main-header__heading {
     font-size: 72px;
-  line-height: 80px;
+    line-height: 80px;
   }
+  .breadcrumb-link,
+  .main-header__heading,
+  .introduction {
+    max-width: 585px;
+    text-align: left;
+  }
+  
 }
