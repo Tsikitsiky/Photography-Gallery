@@ -26,6 +26,9 @@ body {
 a {
   text-decoration: none; }
 
+p {
+  margin: 0; }
+
 ul {
   margin: 0;
   padding: 0;
@@ -156,9 +159,10 @@ h4 {
 
 .breadcrumb-link {
   order: 1;
+  padding-left: calc(38px - 14px);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 16px;
   line-height: 24px;
-  padding-left: calc(38px - 14px);
   background-image: url("../images/icon_arrow_left.svg");
   background-size: 14px;
   background-repeat: no-repeat;
@@ -191,7 +195,9 @@ h4 {
     text-align: left; } }
 
 .image-slider {
-  background-color: rgba(67, 76, 204, 0.05); }
+  background-color: rgba(67, 76, 204, 0.05);
+  padding-top: 80px;
+  padding-bottom: 105px; }
 
 .image-slider__list {
   display: flex;
@@ -205,6 +211,73 @@ h4 {
     height: 85px; }
   .image-slider__list img:not(.active-image) {
     opacity: 0.5; }
+
+.head {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  line-height: 24px; }
+
+.detail {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0; }
+
+.active-image-details {
+  padding-top: 92px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 40px;
+  column-gap: 70px; }
+
+.active-image__article {
+  padding-top: 75px; }
+
+.active-image__article--title {
+  font-size: 40px;
+  line-height: 48px;
+  padding-bottom: 31px; }
+
+.active-image__article--summary {
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+  padding-bottom: 31px; }
+
+.active-image__article--description {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 31px; }
+
+.sharing-links {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px; }
+
+.sharing-links a {
+  display: block;
+  width: 1rem;
+  height: 27px; }
+
+.icon-facebook {
+  background-image: url("../images/icon_facebook.svg");
+  background-size: 9px 18px;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.icon-twitter {
+  background-image: url("../images/icon_twitter.svg");
+  background-size: 13px 15px;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.icon-instagram {
+  background-image: url("../images/icon_instagram.svg");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 @media (min-width: 1240px) {
   .image-slider__list {
