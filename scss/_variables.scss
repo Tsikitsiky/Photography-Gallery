@@ -26,7 +26,13 @@ $breakpoint: $container-max-width;
 }
 
 //set up the background
-@mixin bg {
+@mixin icon-bg {
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@mixin grey-text {
+  color: $colour-text-grey;
+  font-size: $base-font-size;
+  line-height: 24px;
 }

@@ -26,7 +26,7 @@
 .icon_menu {
   background-image: image('icon_menu.svg');
   background-size: 20px 14px;
-  @include bg;
+  @include icon-bg;
 }
 
 .header-site__menu--checkbox > label {

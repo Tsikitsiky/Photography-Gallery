@@ -11,12 +11,11 @@
 
 .breadcrumb-link {
   order: 1;
-  font-size: $base-font-size;
-  line-height: 24px;
   padding-left: calc(38px - 14px);
+  @include grey-text;
   background-image: image('icon_arrow_left.svg');
   background-size: 14px;
-  @include bg;
+  @include icon-bg;
   background-position: left;
   
   a {
