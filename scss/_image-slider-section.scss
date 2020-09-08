@@ -102,4 +102,10 @@
   .image-slider__list {
     column-gap: 10.5px;
   }
+
+  .image-slider__about-the-main-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
 }
