@@ -52,6 +52,10 @@ fieldset {
     min-width: calc(375px - 56px);
   }
 
+  input:hover {
+    box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.1);
+  }
+
   input::placeholder {
     @include grey-text;
   }
@@ -67,6 +71,12 @@ fieldset {
   font-weight: $font-weight-bold;
   font-size: $base-font-size;
   line-height: 24px;
+}
+
+.suscribe__container button:hover {
+  background-color: $colour-white;
+  color: $colour-blue;
+  box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.1);
 }
 
 @media (min-width:$breakpoint) {

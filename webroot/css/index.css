@@ -21,7 +21,8 @@ html {
 
 body {
   font-family: "DM Sans", Arial, Helvetica, sans-serif;
-  margin: 0; }
+  margin: 0;
+  transition: all 0.3s; }
 
 a {
   text-decoration: none; }
@@ -336,6 +337,8 @@ fieldset {
     border-radius: 5px;
     border: 1px solid  #DADADA;
     min-width: calc(375px - 56px); }
+  fieldset input:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); }
   fieldset input::placeholder {
     color: rgba(0, 0, 0, 0.5);
     font-size: 16px;
@@ -351,6 +354,11 @@ fieldset {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px; }
+
+.suscribe__container button:hover {
+  background-color: #FFFFFF;
+  color: #434CCC;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); }
 
 @media (min-width: 1170px) {
   .suscribe__container {
@@ -463,3 +471,14 @@ fieldset {
     justify-content: space-between; }
   .footer-site {
     padding-bottom: 75px; } }
+
+a:hover {
+  font-size: 24px; }
+
+a:focus {
+  font-size: 24px;
+  font-weight: 900; }
+
+.main-footer__navigation li a:hover {
+  font-weight: 700;
+  color: #000000; }

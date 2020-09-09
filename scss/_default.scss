@@ -5,6 +5,7 @@ html {
 body {
   font-family: $font-base, $font-base-fallbacks;
   margin: 0;
+  transition: all 0.3s;
 }
 
 a {
