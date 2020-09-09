@@ -1,0 +1,13 @@
+a:hover {
+  font-size: 24px;
+}
+
+a:focus {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.main-footer__navigation li a:hover {
+  font-weight: $font-weight-bold;
+  color: $colour-text-black;
+}
