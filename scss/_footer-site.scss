@@ -1,0 +1,22 @@
+// author
+
+.footer-site {
+  border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
+  padding-top: 26px;
+  padding-bottom: 28px;
+}
+
+.footer-site p {
+  @include grey-text;
+}
+
+@media (min-width: $breakpoint) {
+  .footer-site__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-site {
+    padding-bottom: 75px;
+  }
+}
