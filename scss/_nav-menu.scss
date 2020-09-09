@@ -29,11 +29,13 @@
 
   }
 
-  [type="checkbox"]:checked ~ nav {
+  body > [type="checkbox"]:checked ~ header nav {
     transform: translateX(0%);
+    z-index: 2;
     top: 70%;
     left: -5%;
   }
+
 
   #menu_checkbox {
     position: absolute;
