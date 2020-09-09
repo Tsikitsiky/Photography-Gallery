@@ -335,7 +335,7 @@ fieldset {
     box-sizing: border-box;
     border-radius: 5px;
     border: 1px solid  #DADADA;
-    width: 326px; }
+    min-width: calc(375px - 56px); }
   fieldset input::placeholder {
     color: rgba(0, 0, 0, 0.5);
     font-size: 16px;
@@ -372,10 +372,94 @@ fieldset {
     margin-top: calc(9px + 16px); } }
 
 .main-footer {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  padding-top: 75px;
+  padding-bottom: 70px; }
 
 .main-footer .logo {
   font-family: "DM Serif Display", "Times New Roman", Times, serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 32px;
+  padding-bottom: 23px; }
+  .main-footer .logo a {
+    text-transform: uppercase;
+    color: #000000; }
+
+.main-footer__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 70px; }
+
+.about-the-website-owner .description {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 23px; }
+
+.about-the-website-owner ul {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px; }
+
+.about-the-website-owner li {
+  width: 1rem;
+  height: 1rem;
+  text-indent: -9999px; }
+
+.main-footer__navigation li a {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  line-height: 24px; }
+
+.main-footer__navigation li:first-of-type a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
   color: #000000; }
+
+.main-footer__navigation li:first-of-type {
+  padding-bottom: 23px; }
+
+.blog-list li {
+  display: flex;
+  column-gap: 25px; }
+  .blog-list li img {
+    width: 70px;
+    height: 48px; }
+  .blog-list li p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000; }
+    .blog-list li p a {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400; }
+
+.blog-list li:first-of-type {
+  margin-bottom: 26px; }
+
+@media (min-width: 1170px) {
+  .main-footer__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between; } }
+
+.footer-site {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 26px;
+  padding-bottom: 28px; }
+
+.footer-site p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  line-height: 24px; }
+
+@media (min-width: 1170px) {
+  .footer-site__container {
+    display: flex;
+    justify-content: space-between; }
+  .footer-site {
+    padding-bottom: 75px; } }
