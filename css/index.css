@@ -22,7 +22,8 @@ html {
 body {
   font-family: "DM Sans", Arial, Helvetica, sans-serif;
   margin: 0;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  position: relative; }
 
 a {
   text-decoration: none; }
@@ -75,7 +76,7 @@ h4 {
     color: #FFFFFF; }
 
 .icon_menu {
-  background-image: url("../images/icon_menu.svg");
+  background-image: url("../icons/icon_menu.svg");
   background-size: 20px 14px;
   background-repeat: no-repeat;
   background-position: center; }
@@ -115,8 +116,9 @@ h4 {
     line-height: 24px;
     text-align: right; }
 
-[type="checkbox"]:checked ~ nav {
+body > [type="checkbox"]:checked ~ header nav {
   transform: translateX(0%);
+  z-index: 2;
   top: 70%;
   left: -5%; }
 
@@ -165,7 +167,7 @@ h4 {
   color: rgba(0, 0, 0, 0.5);
   font-size: 16px;
   line-height: 24px;
-  background-image: url("../images/icon_arrow_left.svg");
+  background-image: url("../icons/icon_arrow_left.svg");
   background-size: 14px;
   background-repeat: no-repeat;
   background-position: center;
@@ -264,19 +266,19 @@ h4 {
   height: 27px; }
 
 .icon-facebook {
-  background-image: url("../images/icon_facebook.svg");
+  background-image: url("../icons/icon_facebook.svg");
   background-size: 9px 18px;
   background-repeat: no-repeat;
   background-position: center; }
 
 .icon-twitter {
-  background-image: url("../images/icon_twitter.svg");
+  background-image: url("../icons/icon_twitter.svg");
   background-size: 13px 15px;
   background-repeat: no-repeat;
   background-position: center; }
 
 .icon-instagram {
-  background-image: url("../images/icon_instagram.svg");
+  background-image: url("../icons/icon_instagram.svg");
   background-size: 18px 18px;
   background-repeat: no-repeat;
   background-position: center; }
