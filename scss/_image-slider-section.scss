@@ -5,6 +5,11 @@
 }
 
 // All aboout the images
+.image-slider__active-image img {
+  width: 100%;
+  height: 100%;
+}
+
 .image-slider__list {
   display: flex;
   flex-direction: row;
@@ -113,4 +118,32 @@
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
   }
+}
+
+// Button next and prev
+
+.image-slider__active-image {
+  position: relative;
+}
+
+.image-slider__active-image button {
+  background-color: rgba($color: #000000, $alpha: 0.0);
+  border: none;
+}
+
+.image-slider__active-image button:hover,
+.image-slider__active-image button:focus {
+  color: $colour-white;
+}
+
+button.next {
+  position: absolute;
+  top: 0;
+  left: 80%;
+}
+
+button.prev {
+  position: absolute;
+  top: 0;
+  left: 10%;
 }
