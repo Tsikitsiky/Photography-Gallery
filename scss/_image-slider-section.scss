@@ -23,7 +23,7 @@
       height: 85px;
     }
 
-    img:not(.active-image) {
+    li:not(.active-image) {
       opacity: 0.5;
     }
 }
@@ -127,8 +127,11 @@
 }
 
 .image-slider__active-image button {
-  background-color: rgba($color: #000000, $alpha: 0.0);
-  border: none;
+  background-color: rgba($color: #fff, $alpha: 0.5);
+  border: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }
 
 .image-slider__active-image button:hover,

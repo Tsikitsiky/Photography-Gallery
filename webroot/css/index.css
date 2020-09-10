@@ -16,8 +16,10 @@
   font-style: normal;
   src: local("DM Serif Display"), local("DM-Serif-Display"), url("../fonts/dm_serif_display_400.woff2") format("woff2"), url("../fonts/dm_serif_display_400.woff") format("woff"); }
 
-html {
-  --paragraph-font-size: $base-font-size; }
+:root {
+  --paragraph-font-size: 16px;
+  --black-text: #000000;
+  --grey-text: rgba(0, 0, 0, 0.5); }
 
 body {
   font-family: "DM Sans", Arial, Helvetica, sans-serif;
@@ -164,8 +166,8 @@ body > [type="checkbox"]:checked ~ header nav {
 .breadcrumb-link {
   order: 1;
   padding-left: calc(38px - 14px);
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
+  color: var(--grey-text, rgba(0, 0, 0, 0.5));
+  font-size: var(--paragraph-font-size, 16px);
   line-height: 24px;
   background-image: url("../icons/icon_arrow_left.svg");
   background-size: 14px;
@@ -217,12 +219,12 @@ body > [type="checkbox"]:checked ~ header nav {
   .image-slider__list img {
     width: 137px;
     height: 85px; }
-  .image-slider__list img:not(.active-image) {
+  .image-slider__list li:not(.active-image) {
     opacity: 0.5; }
 
 .head {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
+  color: var(--grey-text, rgba(0, 0, 0, 0.5));
+  font-size: var(--paragraph-font-size, 16px);
   line-height: 24px; }
 
 .detail {
@@ -254,8 +256,8 @@ body > [type="checkbox"]:checked ~ header nav {
   padding-bottom: 31px; }
 
 .active-image__article--description {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
+  color: var(--grey-text, rgba(0, 0, 0, 0.5));
+  font-size: var(--paragraph-font-size, 16px);
   line-height: 24px;
   padding-bottom: 31px; }
 
@@ -302,8 +304,11 @@ body > [type="checkbox"]:checked ~ header nav {
   position: relative; }
 
 .image-slider__active-image button {
-  background-color: rgba(0, 0, 0, 0);
-  border: none; }
+  background-color: rgba(255, 255, 255, 0.5);
+  border: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; }
 
 .image-slider__active-image button:hover,
 .image-slider__active-image button:focus {
@@ -367,8 +372,8 @@ fieldset {
   fieldset input:hover {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); }
   fieldset input::placeholder {
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 16px;
+    color: var(--grey-text, rgba(0, 0, 0, 0.5));
+    font-size: var(--paragraph-font-size, 16px);
     line-height: 24px; }
 
 .suscribe__container button {
@@ -427,8 +432,8 @@ fieldset {
   row-gap: 70px; }
 
 .about-the-website-owner .description {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
+  color: var(--grey-text, rgba(0, 0, 0, 0.5));
+  font-size: var(--paragraph-font-size, 16px);
   line-height: 24px;
   padding-bottom: 23px; }
 
@@ -443,8 +448,8 @@ fieldset {
   text-indent: -9999px; }
 
 .main-footer__navigation li a {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
+  color: var(--grey-text, rgba(0, 0, 0, 0.5));
+  font-size: var(--paragraph-font-size, 16px);
   line-height: 24px; }
 
 .main-footer__navigation li:first-of-type a {
@@ -468,8 +473,8 @@ fieldset {
     line-height: 24px;
     color: #000000; }
     .blog-list li p a {
-      color: rgba(0, 0, 0, 0.5);
-      font-size: 16px;
+      color: var(--grey-text, rgba(0, 0, 0, 0.5));
+      font-size: var(--paragraph-font-size, 16px);
       line-height: 24px;
       font-weight: 400; }
 
@@ -488,8 +493,8 @@ fieldset {
   padding-bottom: 28px; }
 
 .footer-site p {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 16px;
+  color: var(--grey-text, rgba(0, 0, 0, 0.5));
+  font-size: var(--paragraph-font-size, 16px);
   line-height: 24px; }
 
 @media (min-width: 1170px) {

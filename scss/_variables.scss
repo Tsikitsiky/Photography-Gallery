@@ -32,7 +32,7 @@ $breakpoint: $container-max-width;
 }
 
 @mixin grey-text {
-  color: $colour-text-grey;
-  font-size: $base-font-size;
+  color: var(--grey-text, $colour-text-grey);
+  font-size: var(--paragraph-font-size, $base-font-size);
   line-height: 24px;
 }
