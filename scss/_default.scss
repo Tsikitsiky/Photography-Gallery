@@ -1,5 +1,7 @@
-html {
-  --paragraph-font-size: $base-font-size;
+:root {
+  --paragraph-font-size: #{$base-font-size};
+  --black-text: #{$colour-text-black};
+  --grey-text: #{$colour-text-grey};
 }
 
 body {
