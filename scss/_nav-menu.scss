@@ -10,6 +10,7 @@
 
     ul {
       background-color: rgba($color: $colour-blue, $alpha: 1);
+      width: 20vw;
       height: 100vh;
       padding: 5rem;
       display: flex;
@@ -35,7 +36,6 @@
     top: 70%;
     left: -5%;
   }
-
 
   #menu_checkbox {
     position: absolute;

@@ -29,14 +29,14 @@
   @include icon-bg;
 }
 
-.header-site__menu--checkbox > label {
+.header-site__container  label {
   width: 1rem;
   height: 27px;
   display: block;
 }
 
 @media (min-width: $breakpoint) {
-  .header-site__menu--checkbox {
+  .header-site__container label {
     display: none;
   }
 }
