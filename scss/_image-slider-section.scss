@@ -23,7 +23,7 @@
       height: 85px;
     }
 
-    li:not(.active-image) {
+    img:not(.active-image) {
       opacity: 0.5;
     }
 }
@@ -113,11 +113,28 @@
     line-height: 64px;
   }
 
+  .active-image-details {
+    padding-top: 0;
+    max-height: 152px;
+  }
+
+  .active-image__article {
+    max-width: 570px;
+    padding-top: 0;
+  }
+
   .image-slider__about-the-main-image {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
+    padding-top: 87px;
   }
+
+  button.next,
+  button.prev {
+    display: none;
+  }
+
 }
 
 // Button next and prev
@@ -127,7 +144,7 @@
 }
 
 .image-slider__active-image button {
-  background-color: rgba($color: #fff, $alpha: 0.5);
+  background-color: rgba($color: #fff, $alpha: 0.2);
   border: white;
   width: 20px;
   height: 20px;
