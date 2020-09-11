@@ -19,10 +19,17 @@
 :root {
   --paragraph-font-size: 16px;
   --black-text: #000000;
-  --grey-text: rgba(0, 0, 0, 0.5); }
+  --grey-text: rgba(0, 0, 0, 0.5);
+  --font-base: DM Sans;
+  --base-font-fallbacks: Arial, Helvetica, sans-serif;
+  --font-header: DM Serif Display;
+  --font-header-fallbacks: Times New Roman, Times, serif;
+  --base-font-size: 16px;
+  --base-line-height: 16px;
+  --breakpoint: 1170px; }
 
 body {
-  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  font-family: var(--font-base, "DM Sans", --base-font-fallbacks, Arial, Helvetica, sans-serif);
   margin: 0;
   transition: all 0.3s;
   position: relative; }
@@ -42,20 +49,24 @@ img {
   border-radius: 5px; }
 
 .container {
-  padding-inline: 14px; }
+  padding-inline: 14px;
+  padding-left: 14px;
+  padding-right: 14px; }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "DM Serif Display", "Times New Roman", Times, serif;
+  font-family: var(--font-header, "DM Serif Display", --font-header-fallbacks, "Times New Roman", Times, serif);
   margin: 0; }
 
 @media (min-width: 1170px) {
   .container {
-    max-width: 1170px;
+    max-width: var(--breakpoint, 1170px);
     margin: auto;
-    padding-inline: 0; } }
+    padding-inline: 0;
+    padding-left: 0;
+    padding-right: 0; } }
 
 .header-site {
   background-color: #434CCC;
@@ -70,8 +81,8 @@ h4 {
 
 .header-site__heading {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: calc(var(--base-font-size) * 1.5);
+  line-height: calc(var(--base-line-height) * 2);
   margin: 0; }
   .header-site__heading a {
     text-transform: uppercase;
@@ -84,13 +95,16 @@ h4 {
   background-position: center; }
 
 .header-site__container label {
-  width: 1rem;
+  width: 16px;
   height: 27px;
   display: block; }
 
 @media (min-width: 1170px) {
   .header-site__container label {
-    display: none; } }
+    display: none; }
+  .header-site__heading {
+    font-size: calc(var(--base-font-size) * 2.5);
+    line-height: calc(var(--base-line-height) * 3); } }
 
 .header-site__menu {
   padding: 1rem;
@@ -141,11 +155,13 @@ body > [type="checkbox"]:checked ~ header nav {
     margin: 0;
     padding: 0; }
     .header-site__menu ul {
+      width: auto;
+      height: auto;
       display: flex;
       flex-direction: row;
       column-gap: 2rem;
       padding: 0;
-      height: auto; } }
+      margin-top: 10px; } }
 
 .a11y {
   display: none;
@@ -269,7 +285,7 @@ body > [type="checkbox"]:checked ~ header nav {
 
 .sharing-links a {
   display: block;
-  width: 1rem;
+  width: 16px;
   height: 27px; }
 
 .icon-facebook {
@@ -432,7 +448,7 @@ fieldset {
   font-family: "DM Serif Display", "Times New Roman", Times, serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 32px;
+  line-height: calc(var(--base-line-height) * 2);
   padding-bottom: 23px; }
   .main-footer .logo a {
     text-transform: uppercase;
@@ -455,8 +471,8 @@ fieldset {
   column-gap: 10px; }
 
 .about-the-website-owner li {
-  width: 1rem;
-  height: 1rem;
+  width: 16px;
+  height: 16px;
   text-indent: -9999px; }
 
 .main-footer__navigation li a {
@@ -466,7 +482,7 @@ fieldset {
 
 .main-footer__navigation li:first-of-type a {
   font-weight: 700;
-  font-size: 16px;
+  font-size: var(--base-font-size, 16px);
   line-height: 24px;
   color: #000000; }
 

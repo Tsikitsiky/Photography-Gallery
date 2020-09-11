@@ -55,11 +55,13 @@
     padding: 0;
 
     ul {
+      width: auto;
+      height: auto;
       display: flex;
       flex-direction: row;
       column-gap: 2rem;
       padding: 0;
-      height: auto;
+      margin-top: 10px;
     }
   }
  }

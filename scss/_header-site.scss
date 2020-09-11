@@ -13,8 +13,8 @@
 
 .header-site__heading {
   font-weight: $font-weight-bold;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: calc(var(--base-font-size) * 1.5);
+  line-height: calc(var(--base-line-height) * 2);
   margin: 0;
 
   a {
@@ -30,7 +30,7 @@
 }
 
 .header-site__container  label {
-  width: 1rem;
+  width: 16px;
   height: 27px;
   display: block;
 }
@@ -38,5 +38,10 @@
 @media (min-width: $breakpoint) {
   .header-site__container label {
     display: none;
+  }
+
+  .header-site__heading {
+    font-size: calc(var(--base-font-size) * 2.5);
+    line-height: calc(var(--base-line-height) * 3);
   }
 }

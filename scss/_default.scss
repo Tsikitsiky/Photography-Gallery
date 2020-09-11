@@ -2,10 +2,17 @@
   --paragraph-font-size: #{$base-font-size};
   --black-text: #{$colour-text-black};
   --grey-text: #{$colour-text-grey};
+  --font-base: #{$font-base};
+  --base-font-fallbacks: #{$font-base-fallbacks};
+  --font-header: #{$font-header};
+  --font-header-fallbacks: #{$font-header-fallbacks};
+  --base-font-size: #{$base-font-size};
+  --base-line-height: #{$base-font-size};
+  --breakpoint: #{$breakpoint};
 }
 
 body {
-  font-family: $font-base, $font-base-fallbacks;
+  font-family: var(--font-base, $font-base, --base-font-fallbacks, $font-base-fallbacks);
   margin: 0;
   transition: all 0.3s;
   position: relative;
@@ -31,20 +38,24 @@ img {
 
 .container {
   padding-inline: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: $font-header, $font-header-fallbacks;
+  font-family: var(--font-header, $font-header, --font-header-fallbacks, $font-header-fallbacks);
   margin: 0;
 }
 
 @media (min-width: $breakpoint) {
   .container {
-    max-width: $breakpoint;
+    max-width: var(--breakpoint, $breakpoint);
     margin: auto;
-    padding-inline: 0;
+    padding-inline: 0;//not well supported
+    padding-left: 0;
+    padding-right: 0;
   }
 }
