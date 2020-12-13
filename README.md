@@ -11,9 +11,10 @@ You can find the design:
 
 online at [figma.com/Laaqiq-1-Portfolio-detail-Responsive](https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1-Portfolio-detail-Responsive?node-id=0%3A1) 
 
-### Repository
+### Use
+To run this repository on your computer, you need to install `node-sass`.
 
-[https://github.com/Tsikitsiky/front-end-finals](https://github.com/Tsikitsiky/front-end-finals)
+Repository: [https://github.com/Tsikitsiky/front-end-finals](https://github.com/Tsikitsiky/front-end-finals)
 
 ### Live app
 [https://tsikitsiky.github.io/front-end-finals/](https://tsikitsiky.github.io/front-end-finals/)
