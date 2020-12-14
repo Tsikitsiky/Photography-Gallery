@@ -1,4 +1,4 @@
-# Photograf mockup-to-website project
+# Photography site landing page
 
 This project is a static page. I used `HTML`, `CSS` and `SASS` to get the work to match the given design.
 
