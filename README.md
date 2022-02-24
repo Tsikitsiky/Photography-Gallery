@@ -10,7 +10,7 @@ You can find the design online at [figma.com/Laaqiq-1-Portfolio-detail-Responsiv
 
 ## Features
 - Landing page where a list of galleries are displayed.
-- Swiped photos by horizontaly scroolling.
+- Swiped photos by horizontally scrolling.
 
 ### Installation Requirements
 To run this repository on your computer, you need to install `node-sass`.
